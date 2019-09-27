@@ -1,6 +1,6 @@
 # ta-procurando-front
 
-> My gnarly Nuxt.js project
+> My bedazzling Nuxt.js project
 
 ## Build Setup
 
