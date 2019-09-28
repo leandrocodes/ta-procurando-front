@@ -1,0 +1,13 @@
+
+//Core
+@import '../node_modules/bootstrap/scss/functions';
+@import 'scss/variables/functions';
+
+@import '../node_modules/bootstrap/scss/variables';
+@import 'scss/variables/variables';
+
+@import '../node_modules/bootstrap/scss/mixins';
+@import 'scss/variables/mixins';
+body{
+  background: $light;
+}
