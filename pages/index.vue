@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="index">
     <AppHeader />
   </div>
 </template>
