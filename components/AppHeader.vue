@@ -1,9 +1,9 @@
 <template>
   <header class="header container-fluid">
     <div class="global-nav-principal">
-      <a href="index.html" class="logo-link w-inline-block w--current">
-        <img src="../assets/imgs/logomarca-taprocurando.svg" width="229" alt class="logomarca-traprocurando" />
-      </a>
+      <nuxt-link to="/" class="logo-link w-inline-block w--current">
+        <img src="../assets/imgs/logomarca-taprocurando.svg" width="229" alt class="logomarca-traprocurando">
+      </nuxt-link>
       <div data-w-id="a4d5a11e-1436-c632-cc44-d09a4c6eed9d" class="burger-button w-hidden-main w-hidden-medium">
         <div data-w-id="a4d5a11e-1436-c632-cc44-d09a4c6eed9e" class="burger-line"></div>
         <div data-w-id="a4d5a11e-1436-c632-cc44-d09a4c6eed9f" class="burger-line"></div>
