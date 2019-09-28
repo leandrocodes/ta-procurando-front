@@ -1,16 +1,15 @@
 <template>
-  <div class="container">
-    <div>
-      <b-button>Button</b-button>
-      <b-button variant="danger">Button</b-button>
-      <b-button variant="success">Button</b-button>
-      <b-button variant="primary">Button</b-button>
-    </div>
+  <div class="container-fluid">
+    <AppHeader />
   </div>
 </template>
 
 <script>
+import AppHeader from '../components/AppHeader'
 export default {
+  components: {
+    AppHeader
+  }
 }
 </script>
 
