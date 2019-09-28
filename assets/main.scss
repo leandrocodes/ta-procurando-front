@@ -8,6 +8,9 @@
 
 @import '../node_modules/bootstrap/scss/mixins';
 @import 'scss/variables/mixins';
+
+@import '../node_modules/bootstrap/';
+
 body{
-  background: $light;
+  background: $white;
 }
