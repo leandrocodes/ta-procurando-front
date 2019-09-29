@@ -9,6 +9,9 @@
 @import '../node_modules/bootstrap/scss/mixins';
 @import 'scss/variables/mixins';
 
+@import '../node_modules/bootstrap/scss/utilities';
+@import 'scss/variables/utilities';
+
 @import 'scss/components';
 
 body{

@@ -1,17 +1,17 @@
 <template>
   <div class="index">
     <AppHeader />
-    <SearchBar />
+    <AppNavbar />
   </div>
 </template>
 
 <script>
 import AppHeader from '../components/AppHeader'
-import SearchBar from '../components/SearchBar'
+import AppNavbar from '../components/AppNavbar'
 export default {
   components: {
     AppHeader,
-    SearchBar
+    AppNavbar
   }
 }
 </script>

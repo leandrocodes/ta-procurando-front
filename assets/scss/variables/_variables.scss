@@ -76,7 +76,7 @@ $colors: map-merge(("blue": $blue,
                 "gray-dark": $gray-800),
         $colors);
 
-$primary: $purple;
+$primary: $first;
 $secondary: $gray-100;
 $success: $green;
 $info: $cyan;
