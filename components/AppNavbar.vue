@@ -1,6 +1,6 @@
 <template lang="pug">
   div.navApp
-    b-navbar(variant="primary")
+    b-navbar(toggleable="sm" variant="primary" type="dark")
       b-navbar-nav
         b-nav-item {{ nomeCidade }}
       b-navbar-nav.ml-auto
