@@ -53,7 +53,7 @@ $indigo: #7420ff;
 $purple: #601aef;
 $pink: #fc26a4;
 $red: #f83245;
-$orange: #f4772e;
+$orange: #FF6D00;
 $yellow: #ffc926;
 $green: #1bc943;
 $teal: #18e1a5;
@@ -76,11 +76,11 @@ $colors: map-merge(("blue": $blue,
                 "gray-dark": $gray-800),
         $colors);
 
-$primary: $first;
-$secondary: $gray-100;
+$primary: $purple;
+$secondary: $orange;
 $success: $green;
 $info: $cyan;
-$warning: $orange;
+$warning: $yellow;
 $danger: $red;
 $light: $gray-200;
 $dark: $gray-800;
