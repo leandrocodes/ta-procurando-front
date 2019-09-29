@@ -2,6 +2,22 @@
 //
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+@import url('https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap');
+
+@font-face {
+        font-family: "Qanelas";
+        src: url("~@/assets/fonts/QanelasSoftDEMO-Medium.woff") format('woff');
+}
+
+@font-face {
+        font-family: "Qanelas Bold";
+        src: url("~@/assets/fonts/QanelasSoftDEMO-ExtraBold.woff") format('woff');
+}
+
+@font-face {
+        font-family: "Qanelas Light";
+        src: url("~@/assets/fonts/QanelasSoftDEMO-UltraLight.woff") format('woff');
+}
 
 // Color system
 
@@ -303,7 +319,7 @@ $embed-responsive-aspect-ratios: join(((21 9),
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: 'Heebo',
+$font-family-sans-serif: 'Qanelas',
 sans-serif;
 $font-family-monospace: "Times New Roman",
 Times,
