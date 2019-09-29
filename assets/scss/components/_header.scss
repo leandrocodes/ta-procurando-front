@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: space-between;
 
+  .header-logo {
+    width: 220px;
+  }
+
   a {
     color: $gray-900;
     transition: all .15s ease-in-out;
@@ -11,42 +15,41 @@
 
   .nav-item {
     position: relative;
+
     .left-line {
       position: absolute;
       top: 0;
       left: 0;
       width: 2px;
-      height: 100%;
+      height: 0%;
       background-color: $primary;
     }
+
     .right-line {
       position: absolute;
       top: 0;
       right: 0;
       width: 2px;
-      height: 100%;
+      height: 0%;
       background-color: $primary;
     }
+
     .bottom-line {
       position: absolute;
       bottom: 0;
       right: 0;
-      width: 100%;
+      width: 0%;
       height: 2px;
       background-color: $primary;
     }
+
     .top-line {
       position: absolute;
       top: 0;
       right: 0;
-      width: 100%;
+      width: 0%;
       height: 2px;
       background-color: $primary;
     }
   }
-
-}
-
-.header-logo {
-  width: 220px;
 }
