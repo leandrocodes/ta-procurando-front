@@ -10,15 +10,33 @@
 
   a {
     color: $gray-900;
-    transition: all .15s ease-in-out;
   }
 
   .nav-item {
     position: relative;
+    transition: all ease-in-out;
+    &:hover {
+      transition: all ease-in-out;
+      .top-line {
+        animation: widthAnim .2s forwards;
+      }
+      .right-line {
+        animation: heightAnim .2s forwards;
+        animation-delay: .05s;
+      }
+      .bottom-line {
+        animation: widthAnim .2s forwards;
+        animation-delay: .2s;
+      }
+      .left-line {
+        animation: heightAnim .2s forwards;
+        animation-delay: .25s;
+      }
+    }
 
     .left-line {
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
       width: 2px;
       height: 0%;
@@ -38,7 +56,6 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      width: 0%;
       height: 2px;
       background-color: $primary;
     }
@@ -46,10 +63,31 @@
     .top-line {
       position: absolute;
       top: 0;
-      right: 0;
-      width: 0%;
+      left: 0;
       height: 2px;
       background-color: $primary;
     }
   }
+}
+
+@keyframes widthAnim {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+  
+}
+
+@keyframes heightAnim {
+  from {
+    height: 0%;
+  }
+
+  to {
+    height: 100%;
+  }
+  
 }
