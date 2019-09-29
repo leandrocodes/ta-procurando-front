@@ -7,6 +7,12 @@
         </nuxt-link>
       </b-nav-item>
     </b-nav>
+    <b-nav align="right">
+      <b-nav-item>Anúncie seu Imóvel</b-nav-item>
+      <b-nav-item>Viajante</b-nav-item>
+      <b-nav-item>Anunciante</b-nav-item>
+      <b-nav-item>Contato</b-nav-item>
+    </b-nav>
   </header>
 </template>
 <script>

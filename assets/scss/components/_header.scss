@@ -1,6 +1,9 @@
 .header{
   background: $gray-900;
   padding: .55rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-logo{
