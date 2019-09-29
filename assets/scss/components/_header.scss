@@ -5,12 +5,46 @@
   justify-content: space-between;
 
   a {
-    color: $primary;
+    color: $gray-900;
     transition: all .15s ease-in-out;
-    &:hover {
-      color: $orange;
+  }
+
+  .nav-item {
+    position: relative;
+    .left-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background-color: $primary;
+    }
+    .right-line {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background-color: $primary;
+    }
+    .bottom-line {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $primary;
+    }
+    .top-line {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $primary;
     }
   }
+
 }
 
 .header-logo {
