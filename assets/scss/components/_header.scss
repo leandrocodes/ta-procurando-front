@@ -1,11 +1,18 @@
-.header{
-  background: $gray-900;
+.header {
   padding: .55rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  a {
+    color: $primary;
+    transition: all .15s ease-in-out;
+    &:hover {
+      color: $orange;
+    }
+  }
 }
 
-.header-logo{
+.header-logo {
   width: 220px;
 }
