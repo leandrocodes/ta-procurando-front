@@ -2,7 +2,9 @@
   div.navApp
     b-navbar(toggleable="sm" variant="primary" type="dark")
       b-navbar-nav
-        b-nav-item {{ nomeCidade }}
+        b-nav-item.nome-cidade
+
+          | {{ nomeCidade }}
       b-navbar-nav.ml-auto
         b-nav-item
           img.icon-sub(src="../assets/imgs/icon-house.svg")

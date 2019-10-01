@@ -6,9 +6,16 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    &:hover{
+      color: $cyan!important;
+      
+    }
   }
   .icon-sub{
     width: 20px;
-    margin: 0 5px;
+    margin: 0 10px;
+  }
+  .nome-cidade{
+    font-size: .85rem;
   }
 }
