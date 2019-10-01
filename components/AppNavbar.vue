@@ -4,11 +4,21 @@
       b-navbar-nav
         b-nav-item {{ nomeCidade }}
       b-navbar-nav.ml-auto
-        b-nav-item Home
-        b-nav-item Diversão
-        b-nav-item Sua turma
-        b-nav-item Promoções
-        b-nav-item Ajuda
+        b-nav-item
+          img.icon-sub(src="../assets/imgs/icon-house.svg")
+          | Home
+        b-nav-item
+          img.icon-sub(src="../assets/imgs/icon-diversao.svg")
+          | Diversão
+        b-nav-item
+          img.icon-sub(src="../assets/imgs/icon-suaturma.svg")
+          | Sua turma
+        b-nav-item
+          img.icon-sub(src="../assets/imgs/promocao.svg")
+          | Promoções
+        b-nav-item
+          img.icon-sub(src="../assets/imgs/icon-ajuda.svg")
+          |Ajuda
       b-navbar-nav.ml-auto
         b-nav-item Notificação
 </template>

@@ -3,5 +3,12 @@
   background-color: $primary;
   .nav-link{
     color: white!important;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .icon-sub{
+    width: 20px;
+    margin: 0 5px;
   }
 }
