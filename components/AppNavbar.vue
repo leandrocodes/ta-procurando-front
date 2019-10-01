@@ -3,7 +3,6 @@
     b-navbar(toggleable="sm" variant="primary" type="dark")
       b-navbar-nav
         b-nav-item.nome-cidade
-
           | {{ nomeCidade }}
       b-navbar-nav.ml-auto
         b-nav-item
