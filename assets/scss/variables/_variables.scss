@@ -6,10 +6,20 @@
 
 @font-face {
         font-family: "Qanelas";
-        src: url("~@/assets/fonts/QanelasSoftDEMO-Medium.woff") format('woff');
+        src: url("~@/assets/fonts/Regular/Qanelas-Regular.woff") format('woff');
 }
 
 @font-face {
+        font-family: "Qanelas Bold";
+        src: url("~@/assets/fonts/Bold/Qanelas-Bold.woff") format('woff');
+}
+
+@font-face {
+        font-family: "Qanelas Thin";
+        src: url("~@/assets/fonts/Thin/Qanelas-Thin.woff") format('woff');
+}
+
+/* @font-face {
         font-family: "Qanelas Bold";
         src: url("~@/assets/fonts/QanelasSoftDEMO-ExtraBold.woff") format('woff');
 }
@@ -17,7 +27,7 @@
 @font-face {
         font-family: "Qanelas Light";
         src: url("~@/assets/fonts/QanelasSoftDEMO-UltraLight.woff") format('woff');
-}
+} */
 
 // Color system
 
