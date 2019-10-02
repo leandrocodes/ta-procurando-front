@@ -3,6 +3,7 @@
     b-navbar(toggleable="sm" variant="primary" type="dark")
       b-navbar-nav
         b-nav-item.nome-cidade
+          font-awesome-icon(:icon="['fas', 'map-marker-alt']")
           | {{ nomeCidade }}
       b-navbar-nav.ml-auto
         b-nav-item
