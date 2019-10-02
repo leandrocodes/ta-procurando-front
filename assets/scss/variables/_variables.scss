@@ -5,8 +5,13 @@
 @import url('https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap');
 
 @font-face {
-        font-family: "Qanelas";
+        font-family: "Qanelas Regular";
         src: url("~@/assets/fonts/Regular/Qanelas-Regular.woff") format('woff');
+}
+
+@font-face {
+        font-family: "Qanelas";
+        src: url("~@/assets/fonts/Medium/Qanelas-Medium.woff") format('woff');
 }
 
 @font-face {
