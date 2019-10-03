@@ -5,7 +5,7 @@
   justify-content: space-between;
 
   .header-logo {
-    width: 230px;
+    width: 200px;
     height: 90px;
     background-image: url('~@/assets/imgs/logomarca-taprocurando.svg');
     background-size: contain;
@@ -75,6 +75,17 @@
       background-color: $primary;
     }
   }
+  .nav-mobile{
+    display: none;
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+
 }
 
 @keyframes widthAnim {
