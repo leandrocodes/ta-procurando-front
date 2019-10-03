@@ -4,9 +4,9 @@
 
       b-nav-item
         nuxt-link(to='/')
-          img.header-logo(src='../assets/imgs/logomarca-taprocurando.svg')
+          .header-logo
 
-    b-nav(align='right')
+    b-nav(align='right').nav-links
       div.nav-item
         b-nav-item Anúncie seu Imóvel
         animation-group

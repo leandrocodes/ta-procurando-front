@@ -5,7 +5,12 @@
   justify-content: space-between;
 
   .header-logo {
-    width: 220px;
+    width: 230px;
+    height: 90px;
+    background-image: url('~@/assets/imgs/logomarca-taprocurando.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   a {
