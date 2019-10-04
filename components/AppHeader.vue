@@ -1,7 +1,7 @@
 <template lang="pug">
   header.header
 
-    b-nav(align='left').menu
+    b-nav(align='left' @click="open = !open").menu
       b-nav-item
         nuxt-link(to='/')
           .header-logo
@@ -44,9 +44,9 @@
             div.bottom-line
             div.top-line
 
-    b-nav.nav-mobile
+    b-nav.nav-mobile(v-if="open")
       div.nav-item
-        b-nav-item Anúncie seu Imóvel
+        b-nav-item Anúnciar
         animation-group
           div.left-line
           div.right-line
@@ -81,7 +81,12 @@
 </template>
 <script>
 export default {
-  name: 'AppHeader'
+  name: 'AppHeader',
+  data () {
+    return {
+      open: false
+    }
+  }
 }
 </script>
 
