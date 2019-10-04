@@ -46,14 +46,6 @@
 
     b-nav.nav-mobile(v-if="open")
       div.nav-item
-        b-nav-item Anúnciar
-        animation-group
-          div.left-line
-          div.right-line
-          div.bottom-line
-          div.top-line
-
-      div.nav-item
         b-nav-item Viajante
         animation-group
           div.left-line
@@ -63,6 +55,14 @@
 
       div.nav-item
         b-nav-item Anunciante
+        animation-group
+          div.left-line
+          div.right-line
+          div.bottom-line
+          div.top-line
+
+      div.nav-item
+        b-nav-item Anúnciar
         animation-group
           div.left-line
           div.right-line
