@@ -1,4 +1,4 @@
-@media screen and (max-width: 320px){
+@media screen and (max-width: 425px){
   .header{
     padding: .05rem .5rem;
     flex-direction: column;
@@ -10,9 +10,9 @@
   .nav-links{
     display: none;
   }
-  .nav-mobile.open{
+
+  .burguer{
     display: block!important;
-    text-align: center;
   }
 
 }

@@ -2,10 +2,13 @@
   header.header
 
     b-nav(align='left').menu
-      div.burguer 123
       b-nav-item
         nuxt-link(to='/')
           .header-logo
+      div.burguer
+        .line.line1
+        .line.line2
+        .line.line3
 
     b-nav(align='right').nav-links
       div.nav-item

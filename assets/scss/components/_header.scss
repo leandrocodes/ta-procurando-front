@@ -81,9 +81,18 @@
 
   .menu{
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
+  }
+  .burguer{
+    display: none;
+    .line{
+      width: 23px;
+      height: 3px;
+      background: $primary;
+      margin: 4px 0;
+      border: 1px solid $primary;
+    }
   }
 
 }
