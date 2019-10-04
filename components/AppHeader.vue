@@ -5,7 +5,7 @@
       b-nav-item
         nuxt-link(to='/')
           .header-logo
-      div.burguer
+      b-nav-item.burguer
         .line.line1
         .line.line2
         .line.line3
@@ -91,4 +91,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media screen and (max-width: 425px){
+}
 </style>
