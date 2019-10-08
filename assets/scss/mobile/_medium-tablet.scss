@@ -2,7 +2,26 @@
   .navApp{
     display: none;
   }
-  .mobile-nav{
-    display: flex;
+  .header{
+    background: white;
+    padding: .05rem .5rem;
+    flex-direction: column;
+    .header-logo{
+      width: 200px;
+      height: 45px;
+    }
+  }
+  .nav-links{
+    display: none;
+  }
+  .nav-mobile{
+    display: flex!important;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burguer{
+    display: block!important;
   }
 }

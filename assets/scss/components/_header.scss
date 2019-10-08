@@ -1,3 +1,4 @@
+
 .header {
   padding: 0 1rem;
   display: flex;
@@ -7,7 +8,6 @@
   width: 100%;
   background: white;
   z-index: 10;
-  height: 75px;
 
   .header-logo {
     width: 250px;
@@ -110,7 +110,7 @@
   to {
     width: 100%;
   }
-  
+
 }
 
 @keyframes heightAnim {
@@ -121,5 +121,5 @@
   to {
     height: 100%;
   }
-  
+
 }

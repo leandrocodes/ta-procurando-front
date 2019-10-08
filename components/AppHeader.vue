@@ -41,7 +41,7 @@
               div.bottom-line
               div.top-line
 
-      b-nav.nav-mobile(v-if="open")
+      b-nav.nav-mobile(v-if="open" align='right' is-nav-bar='true')
         div.nav-item
           b-nav-item Viajante
           animation-group
@@ -71,7 +71,6 @@
               div.right-line
               div.bottom-line
               div.top-line
-
     AppNavbar
 </template>
 <script>
