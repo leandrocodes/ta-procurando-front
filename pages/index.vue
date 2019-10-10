@@ -5,7 +5,7 @@
       .tabs
         .tab.casa
           img(src="../assets/imgs/icon-casa.svg")
-          |Casa
+          | Casa
         .tab.pousada Pousada
         .tab.hotel Hotel
         .tab.beira-mar Beira-mar
