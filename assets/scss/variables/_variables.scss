@@ -66,12 +66,12 @@ $second: $black;
 $blue: #4191ff;
 $indigo: #5F13F0;
 $purple: #601aef;
-$pink: #fc26a4;
+$pink: #BA0C62;
 $red: #f83245;
-$orange: #FF6D00;
+$orange: #EC8D06;
 $yellow: #ffc926;
 $green: #1bc943;
-$teal: #18e1a5;
+$teal: #078D72;
 $cyan: #01f1f7;
 
 $colors: ();
@@ -335,6 +335,8 @@ $embed-responsive-aspect-ratios: join(((21 9),
 
 // stylelint-disable value-keyword-case
 $font-family-sans-serif: 'Qanelas',
+sans-serif;
+$font-family-sans-serif-secondary: 'Assistant',
 sans-serif;
 $font-family-monospace: "Times New Roman",
 Times,
