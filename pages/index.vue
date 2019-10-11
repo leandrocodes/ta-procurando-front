@@ -3,19 +3,19 @@
     AppHeader
     section.busca
       div.tabs
-        div.tab.casa
+        div.tab.casa(@click="toggleTab('casa')" :class="{active: casa.isActive}")
           img(src="../assets/imgs/icon-casa.svg")
           | Casa
-        div.tab.pousada
+        div.tab.pousada(@click="toggleTab('pousada')" :class="{active: pousada.isActive}")
           img(src="../assets/imgs/icon-pousada.svg")
           | Pousada
-        div.tab.hotel
+        div.tab.hotel(@click="toggleTab('hotel')" :class="{active: hotel.isActive}")
           img(src="../assets/imgs/icon-hotel.svg")
           | Hotel
-        div.tab.beira-mar
+        div.tab.beira-mar(@click="toggleTab('beiramar')" :class="{active: beiramar.isActive}")
           img(src="../assets/imgs/icon-beiramar.svg")
           | Beira-mar
-        div.tab.sitio
+        div.tab.sitio(@click="toggleTab('sitio')" :class="{active: sitio.isActive}")
           img(src="../assets/imgs/icon-sitio.svg")
           |Sitio
 </template>
@@ -25,6 +25,70 @@ import AppHeader from '../components/AppHeader'
 export default {
   components: {
     AppHeader
+  },
+  data () {
+    return {
+      casa: {
+        isActive: false
+      },
+      pousada: {
+        isActive: false
+      },
+      hotel: {
+        isActive: false
+      },
+      beiramar: {
+        isActive: false
+      },
+      sitio: {
+        isActive: false
+      }
+    }
+  },
+  methods: {
+    toggleTab (tab) {
+      switch (tab) {
+        case 'casa':
+          this.casa.isActive = !this.casa.isActive
+          this.pousada.isActive = false
+          this.hotel.isActive = false
+          this.beiramar.isActive = false
+          this.sitio.isActive = false
+          break
+
+        case 'pousada':
+          this.casa.isActive = false
+          this.pousada.isActive = !this.pousada.isActive
+          this.hotel.isActive = false
+          this.beiramar.isActive = false
+          this.sitio.isActive = false
+          break
+
+        case 'hotel':
+          this.casa.isActive = false
+          this.pousada.isActive = false
+          this.hotel.isActive = !this.hotel.isActive
+          this.beiramar.isActive = false
+          this.sitio.isActive = false
+          break
+
+        case 'beiramar':
+          this.casa.isActive = false
+          this.pousada.isActive = false
+          this.hotel.isActive = false
+          this.beiramar.isActive = !this.beiramar.isActive
+          this.sitio.isActive = false
+          break
+
+        case 'sitio':
+          this.casa.isActive = false
+          this.pousada.isActive = false
+          this.hotel.isActive = false
+          this.beiramar.isActive = false
+          this.sitio.isActive = !this.sitio.isActive
+          break
+      }
+    }
   }
 }
 </script>

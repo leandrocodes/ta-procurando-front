@@ -22,6 +22,9 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   font-family: $font-family-sans-serif-secondary;
+  &:hover{
+    cursor: pointer;
+  }
   img{
     margin-right: 10px;
     height: 1.85rem;
@@ -29,21 +32,42 @@
   &.casa{
     background: $light;
     color: $indigo;
+    &.active{
+      background: $indigo;
+      color: $light;
+      transition: all .2s ease-in-out;
+    }
   }
   &.pousada{
     background: $indigo;
     color: $light;
+    &.active{
+      background: $light;
+      color: $indigo;
+    }
   }
   &.hotel{
     background: $orange;
     color: $light;
+    &.active{
+      background: $light;
+      color: $orange;
+    }
   }
   &.beira-mar{
     background: $teal;
     color: $light;
+    &.active{
+      background: $light;
+      color: $teal;
+    }
   }
   &.sitio{
     background: $pink;
     color: $light;
+    &.active{
+      background: $light;
+      color: $pink;
+    }
   }
 }
