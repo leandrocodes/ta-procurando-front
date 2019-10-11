@@ -31,11 +31,11 @@
     height: 1.85rem;
   }
   &.casa{
-    background: $light;
+    
+    background: $gray-200;
     color: $indigo;
     &.active{
-      background: $indigo;
-      color: $light;
+      background: $light;
     }
   }
   &.pousada{
