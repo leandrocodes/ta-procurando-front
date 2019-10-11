@@ -22,7 +22,7 @@
           | Promoções
         b-nav-item
           img.icon-sub(src="../assets/imgs/icon-ajuda.svg")
-          |Ajuda
+          | Ajuda
 
       b-navbar-nav.ml-auto
         b-nav-item.notification-btn Notificação

@@ -18,6 +18,9 @@
         div.tab.sitio(@click="toggleTab('sitio')" :class="{active: sitio.isActive}")
           img(src="../assets/imgs/icon-sitio.svg")
           |Sitio
+      div.search-box
+        div.search-casa(v-show="")
+          | casa
 </template>
 
 <script>
@@ -29,7 +32,7 @@ export default {
   data () {
     return {
       casa: {
-        isActive: false
+        isActive: true
       },
       pousada: {
         isActive: false
