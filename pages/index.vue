@@ -20,7 +20,12 @@
           |Sitio
       div.search-box
         div.search-casa(v-show="casa.isActive")
-          | Casa
+          form.form-search
+            div.destino
+              label(for="destino") Digite seu destino:
+              .input
+                img(src="../assets/imgs/home-localizacao.svg")
+                input(type="text" placeholder="ex.: Belo Horizonte")
         div.search-casa(v-show="pousada.isActive")
           | Pousada
         div.search-casa(v-show="hotel.isActive")

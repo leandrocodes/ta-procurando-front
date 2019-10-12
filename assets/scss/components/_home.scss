@@ -1,5 +1,5 @@
 .busca{
-  padding: 2em 1.5em;
+  padding: 2em 4em;
   min-height: 450px;
   width: 100%;
   background-image: url("~@/assets/imgs/644873f3-544d-4bfb-b19b-a673308b7373.hw1.jpg");
@@ -11,6 +11,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  margin: 0 auto;
 }
 .tab{
   margin: 20px 0 1.5px 1.5px;
@@ -23,6 +25,7 @@
   border-top-right-radius: 5px;
   font-family: $font-family-sans-serif-secondary;
   transition: all .2s ease-in-out;
+  width: 20%;
   &:hover{
     cursor: pointer;
   }
@@ -68,6 +71,32 @@
     &.active{
       background: $light;
       color: $pink;
+    }
+  }
+}
+
+.search-box{
+  margin: 0 auto;
+  width: 99.5%;
+  height: 15%;
+  padding: 5%;
+  background: rgba(0, 0, 0, 0.44);
+  margin: 0 auto;
+  color: $light;
+  input{
+    text-align: center;
+    border-radius: 7vh;
+    border: 2px solid $primary;
+    height: 7vh;
+  }
+  .destino{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    .input{
+      img{
+        width: 30px;
+      }
     }
   }
 }
