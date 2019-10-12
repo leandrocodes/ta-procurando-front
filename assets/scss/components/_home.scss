@@ -89,13 +89,25 @@
     border: 2px solid $primary;
     height: 7vh;
   }
+  .form-search{
+    display: flex;
+  }
   .destino{
     display: flex;
     flex-direction: column;
-    width: 25%;
+    img{
+      width: 35px;
+      margin-right: 5px;
+    }
+  }
+  .datas{
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
     .input{
-      img{
-        width: 30px;
+      input{
+        width: 80px;
+        margin: 0 5px
       }
     }
   }
