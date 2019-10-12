@@ -19,8 +19,16 @@
           img(src="../assets/imgs/icon-sitio.svg")
           |Sitio
       div.search-box
-        div.search-casa(v-show="")
-          | casa
+        div.search-casa(v-show="casa.isActive")
+          | Casa
+        div.search-casa(v-show="pousada.isActive")
+          | Pousada
+        div.search-casa(v-show="hotel.isActive")
+          | Hotel
+        div.search-casa(v-show="beiramar.isActive")
+          | Beira-mar
+        div.search-casa(v-show="sitio.isActive")
+          | Sítio
 </template>
 
 <script>
