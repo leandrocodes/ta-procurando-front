@@ -36,6 +36,8 @@
                 .dropdown
                   p(v-if="!hospedes") Selecione os hóspedes
                   font-awesome-icon(:icon="['fas', 'angle-down']")
+            .buscar
+              a.btn Buscar
         div.search-casa(v-show="pousada.isActive")
           | Pousada
         div.search-casa(v-show="hotel.isActive")
@@ -115,6 +117,8 @@ export default {
           this.sitio.isActive = !this.sitio.isActive
           break
       }
+    },
+    openDropdown () {
     }
   }
 }

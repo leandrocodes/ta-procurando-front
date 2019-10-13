@@ -13,21 +13,18 @@
       b-nav(align='right').nav-links
         div.nav-item
           b-nav-item Anúncie seu Imóvel
-          animation-group
             div.left-line
             div.right-line
             div.bottom-line
             div.top-line
         div.nav-item
           b-nav-item Viajante
-          animation-group
             div.left-line
             div.right-line
             div.bottom-line
             div.top-line
         div.nav-item
           b-nav-item Anunciante
-          animation-group
             div.left-line
             div.right-line
             div.bottom-line
@@ -35,7 +32,6 @@
         div.nav-item
           nuxt-link(to='/contato')
             b-nav-item Contato
-            animation-group
               div.left-line
               div.right-line
               div.bottom-line
@@ -44,21 +40,18 @@
       b-nav.nav-mobile(v-if="open" align='right' is-nav-bar='true')
         div.nav-item
           b-nav-item Viajante
-          animation-group
             div.left-line
             div.right-line
             div.bottom-line
             div.top-line
         div.nav-item
           b-nav-item Anunciante
-          animation-group
             div.left-line
             div.right-line
             div.bottom-line
             div.top-line
         div.nav-item
           b-nav-item Anúnciar
-          animation-group
             div.left-line
             div.right-line
             div.bottom-line
@@ -66,7 +59,7 @@
         div.nav-item
           nuxt-link(to='/contato')
             b-nav-item Contato
-            animation-group
+
               div.left-line
               div.right-line
               div.bottom-line

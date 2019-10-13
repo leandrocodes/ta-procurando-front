@@ -84,6 +84,9 @@
   background: rgba(0, 0, 0, 0.44);
   margin: 0 auto;
   color: $light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   input{
     text-align: center;
     border-radius: 7vh;
@@ -116,6 +119,7 @@
     display: flex;
     align-items: center;
     .dropdown{
+      margin: 5px;
       width: 200px;
       border: 2px solid $light;
       border-radius: 7vh;
@@ -126,6 +130,16 @@
       p{
         margin-top: 6.5%;
       }
+    }
+  }
+  .buscar{
+    align-self: center;
+    margin: 10px 30px;
+    &:hover{
+      cursor: pointer;
+    }
+    .btn{
+      background-color: $primary;
     }
   }
 }
