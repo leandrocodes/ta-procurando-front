@@ -130,6 +130,17 @@
       p{
         margin-top: 6.5%;
       }
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    .menu{
+      color: $black;
+      height: 150px;
+      width: 200px;
+      position: absolute;
+      background: $light;
+      border-radius: .25em;
     }
   }
   .buscar{

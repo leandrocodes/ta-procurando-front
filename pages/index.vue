@@ -36,6 +36,8 @@
                 .dropdown
                   p(v-if="!hospedes") Selecione os hóspedes
                   font-awesome-icon(:icon="['fas', 'angle-down']")
+                .menu(v-if="openDropdownMenu")
+                  | teste123
             .buscar
               a.btn Buscar
                 font-awesome-icon(:icon="['fas', 'angle-right']")
@@ -72,7 +74,8 @@ export default {
       sitio: {
         isActive: false
       },
-      hospedes: null
+      hospedes: null,
+      openDropdownMenu: false
     }
   },
   methods: {
@@ -120,6 +123,7 @@ export default {
       }
     },
     openDropdown () {
+      this.openDropdownMenu = !this.openDropdownMenu
     }
   }
 }
