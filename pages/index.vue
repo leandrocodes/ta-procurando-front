@@ -38,6 +38,7 @@
                   font-awesome-icon(:icon="['fas', 'angle-down']")
             .buscar
               a.btn Buscar
+                font-awesome-icon(:icon="['fas', 'angle-right']")
         div.search-casa(v-show="pousada.isActive")
           | Pousada
         div.search-casa(v-show="hotel.isActive")
