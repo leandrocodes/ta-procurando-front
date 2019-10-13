@@ -17,7 +17,7 @@
           | Beira-mar
         div.tab.sitio(@click="toggleTab('sitio')" :class="{active: sitio.isActive}")
           img(src="../assets/imgs/icon-sitio.svg")
-          |Sitio
+          | Sítio
       div.search-box
         div.search-casa(v-show="casa.isActive")
           form.form-search
@@ -29,8 +29,13 @@
             .datas
               label(for="data") Datas:
               .input
-                input(type="text" placeholder="ida")
-                input(type="text" placeholder="volta")
+                input(type="text" placeholder="Ida")
+                input(type="text" placeholder="Volta")
+            .hospedes(@click="openDropdown")
+              label(for="hospedes") Hóspedes:
+                .dropdown
+                  p(v-if="!hospedes") Selecione os hóspedes
+                  font-awesome-icon(:icon="['fas', 'angle-down']")
         div.search-casa(v-show="pousada.isActive")
           | Pousada
         div.search-casa(v-show="hotel.isActive")
@@ -63,7 +68,8 @@ export default {
       },
       sitio: {
         isActive: false
-      }
+      },
+      hospedes: null
     }
   },
   methods: {

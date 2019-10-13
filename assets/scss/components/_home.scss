@@ -76,6 +76,7 @@
 }
 
 .search-box{
+  font-family: $font-family-sans-serif;
   margin: 0 auto;
   width: 99.5%;
   height: 15%;
@@ -87,7 +88,7 @@
     text-align: center;
     border-radius: 7vh;
     border: 2px solid $primary;
-    height: 7vh;
+    height: 5vh;
   }
   .form-search{
     display: flex;
@@ -106,8 +107,24 @@
     flex-direction: column;
     .input{
       input{
-        width: 80px;
+        width: 150px;
         margin: 0 5px
+      }
+    }
+  }
+  .hospedes{
+    display: flex;
+    align-items: center;
+    .dropdown{
+      width: 200px;
+      border: 2px solid $light;
+      border-radius: 7vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 5vh;
+      p{
+        margin-top: 6.5%;
       }
     }
   }
