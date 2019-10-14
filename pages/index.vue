@@ -43,7 +43,7 @@
                       a.btn(@click='nAdultos--') -
                       a.btn(@click='nAdultos++') +
                     hr
-                    .cirancas
+                    .criancas
                       | {{ nCriancas }} Crianças
                       a.btn(@click='nCriancas--') -
                       a.btn(@click='nCriancas++') +
