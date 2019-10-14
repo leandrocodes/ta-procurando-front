@@ -51,14 +51,138 @@
             .buscar
               a.btn Buscar
                 font-awesome-icon(:icon="['fas', 'angle-right']")
+
         div.search-casa(v-show="pousada.isActive")
-          | Pousada
+          form.form-search
+            .destino
+              label(for="destino") Digite seu destino:
+              .input
+                img(src="../assets/imgs/home-localizacao.svg")
+                input(type="text" placeholder="ex: Belo Horizonte" style="width: 250px")
+            .datas
+              label(for="data") Datas:
+              .input
+                input(type="text" placeholder="Ida")
+                input(type="text" placeholder="Volta")
+            .hospedes
+              label(for="hospedes") Hóspedes:
+                .dropdown(@click="openDropdown")
+                  p(v-if="!hospedes") Selecione os hóspedes
+                  p(v-else) {{nAdultos}} Adultos e {{nCriancas}} Crianças
+                  font-awesome-icon(:icon="['fas', 'angle-down']")
+                transition(name="showIn")
+                  .menu(v-if="openDropdownMenu")
+                    .adultos
+                      | {{ nAdultos }} Adultos
+                      a.btn(@click='nAdultos--') -
+                      a.btn(@click='nAdultos++') +
+                    hr
+                    .criancas
+                      | {{ nCriancas }} Crianças
+                      a.btn(@click='nCriancas--') -
+                      a.btn(@click='nCriancas++') +
+            .buscar
+              a.btn Buscar
+                font-awesome-icon(:icon="['fas', 'angle-right']")
+
         div.search-casa(v-show="hotel.isActive")
-          | Hotel
+          form.form-search
+            .destino
+              label(for="destino") Digite seu destino:
+              .input
+                img(src="../assets/imgs/home-localizacao.svg")
+                input(type="text" placeholder="ex: Belo Horizonte" style="width: 250px")
+            .datas
+              label(for="data") Datas:
+              .input
+                input(type="text" placeholder="Ida")
+                input(type="text" placeholder="Volta")
+            .hospedes
+              label(for="hospedes") Hóspedes:
+                .dropdown(@click="openDropdown")
+                  p(v-if="!hospedes") Selecione os hóspedes
+                  p(v-else) {{nAdultos}} Adultos e {{nCriancas}} Crianças
+                  font-awesome-icon(:icon="['fas', 'angle-down']")
+                transition(name="showIn")
+                  .menu(v-if="openDropdownMenu")
+                    .adultos
+                      | {{ nAdultos }} Adultos
+                      a.btn(@click='nAdultos--') -
+                      a.btn(@click='nAdultos++') +
+                    hr
+                    .criancas
+                      | {{ nCriancas }} Crianças
+                      a.btn(@click='nCriancas--') -
+                      a.btn(@click='nCriancas++') +
+            .buscar
+              a.btn Buscar
+                font-awesome-icon(:icon="['fas', 'angle-right']")
+
         div.search-casa(v-show="beiramar.isActive")
-          | Beira-mar
+          form.form-search
+            .destino
+              label(for="destino") Digite seu destino:
+              .input
+                img(src="../assets/imgs/home-localizacao.svg")
+                input(type="text" placeholder="ex: Belo Horizonte" style="width: 250px")
+            .datas
+              label(for="data") Datas:
+              .input
+                input(type="text" placeholder="Ida")
+                input(type="text" placeholder="Volta")
+            .hospedes
+              label(for="hospedes") Hóspedes:
+                .dropdown(@click="openDropdown")
+                  p(v-if="!hospedes") Selecione os hóspedes
+                  p(v-else) {{nAdultos}} Adultos e {{nCriancas}} Crianças
+                  font-awesome-icon(:icon="['fas', 'angle-down']")
+                transition(name="showIn")
+                  .menu(v-if="openDropdownMenu")
+                    .adultos
+                      | {{ nAdultos }} Adultos
+                      a.btn(@click='nAdultos--') -
+                      a.btn(@click='nAdultos++') +
+                    hr
+                    .criancas
+                      | {{ nCriancas }} Crianças
+                      a.btn(@click='nCriancas--') -
+                      a.btn(@click='nCriancas++') +
+            .buscar
+              a.btn Buscar
+                font-awesome-icon(:icon="['fas', 'angle-right']")
+
         div.search-casa(v-show="sitio.isActive")
-          | Sítio
+          form.form-search
+            .destino
+              label(for="destino") Digite seu destino:
+              .input
+                img(src="../assets/imgs/home-localizacao.svg")
+                input(type="text" placeholder="ex: Belo Horizonte" style="width: 250px")
+            .datas
+              label(for="data") Datas:
+              .input
+                input(type="text" placeholder="Ida")
+                input(type="text" placeholder="Volta")
+            .hospedes
+              label(for="hospedes") Hóspedes:
+                .dropdown(@click="openDropdown")
+                  p(v-if="!hospedes") Selecione os hóspedes
+                  p(v-else) {{nAdultos}} Adultos e {{nCriancas}} Crianças
+                  font-awesome-icon(:icon="['fas', 'angle-down']")
+                transition(name="showIn")
+                  .menu(v-if="openDropdownMenu")
+                    .adultos
+                      | {{ nAdultos }} Adultos
+                      a.btn(@click='nAdultos--') -
+                      a.btn(@click='nAdultos++') +
+                    hr
+                    .criancas
+                      | {{ nCriancas }} Crianças
+                      a.btn(@click='nCriancas--') -
+                      a.btn(@click='nCriancas++') +
+            .buscar
+              a.btn Buscar
+                font-awesome-icon(:icon="['fas', 'angle-right']")
 </template>
 
 <script>
