@@ -31,13 +31,16 @@
               .input
                 input(type="text" placeholder="Ida")
                 input(type="text" placeholder="Volta")
-            .hospedes(@click="openDropdown")
+            .hospedes
               label(for="hospedes") Hóspedes:
-                .dropdown
+                .dropdown(@click="openDropdown")
                   p(v-if="!hospedes") Selecione os hóspedes
                   font-awesome-icon(:icon="['fas', 'angle-down']")
-                .menu(v-if="openDropdownMenu")
-                  | teste123
+                transition(name="showIn")
+                  .menu(v-if="openDropdownMenu")
+                    | {{ nAdultos }} Adultos
+                    a.btn(@click='nAdultos--') -
+                    a.btn(@click='nAdultos++') +
             .buscar
               a.btn Buscar
                 font-awesome-icon(:icon="['fas', 'angle-right']")
@@ -75,7 +78,9 @@ export default {
         isActive: false
       },
       hospedes: null,
-      openDropdownMenu: false
+      openDropdownMenu: false,
+      nAdultos: 5,
+      nCriancas: 2
     }
   },
   methods: {
@@ -130,4 +135,12 @@ export default {
 </script>
 
 <style>
+.showIn-enter-active, .showIn-leave-active {
+  transition: all .2s;
+  max-height: 100px;
+}
+.showIn-enter, .showIn-leave-to /* .fade-leave-active em versões anteriores a 2.1.8 */ {
+  opacity: 0;
+  max-height: 0px;
+}
 </style>
