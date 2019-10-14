@@ -38,9 +38,15 @@
                   font-awesome-icon(:icon="['fas', 'angle-down']")
                 transition(name="showIn")
                   .menu(v-if="openDropdownMenu")
-                    | {{ nAdultos }} Adultos
-                    a.btn(@click='nAdultos--') -
-                    a.btn(@click='nAdultos++') +
+                    .adultos
+                      | {{ nAdultos }} Adultos
+                      a.btn(@click='nAdultos--') -
+                      a.btn(@click='nAdultos++') +
+                    hr
+                    .cirancas
+                      | {{ nCriancas }} Crianças
+                      a.btn(@click='nCriancas--') -
+                      a.btn(@click='nCriancas++') +
             .buscar
               a.btn Buscar
                 font-awesome-icon(:icon="['fas', 'angle-right']")
