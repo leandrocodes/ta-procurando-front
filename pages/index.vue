@@ -35,6 +35,7 @@
               label(for="hospedes") Hóspedes:
                 .dropdown(@click="openDropdown")
                   p(v-if="!hospedes") Selecione os hóspedes
+                  p(v-else) {{nAdultos}} Adultos e {{nCriancas}} Crianças
                   font-awesome-icon(:icon="['fas', 'angle-down']")
                 transition(name="showIn")
                   .menu(v-if="openDropdownMenu")
@@ -87,6 +88,16 @@ export default {
       openDropdownMenu: false,
       nAdultos: 5,
       nCriancas: 2
+    }
+  },
+  watch: {
+    nAdultos () {
+      this.hospedes = true
+      return this.hospedes
+    },
+    nCriancas () {
+      this.hospedes = true
+      return this.hospedes
     }
   },
   methods: {
