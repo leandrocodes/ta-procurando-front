@@ -29,6 +29,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~/plugins/date-pick', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules

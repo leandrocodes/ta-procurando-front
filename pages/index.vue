@@ -183,6 +183,8 @@
             .buscar
               a.btn Buscar
                 font-awesome-icon(:icon="['fas', 'angle-right']")
+    no-ssr
+      date-picker(v-model='date' :lang='lang')
 </template>
 
 <script>
@@ -193,6 +195,15 @@ export default {
   },
   data () {
     return {
+      date: '',
+      lang: {
+        days: ['DOM', 'SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SÁB'],
+        months: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+        pickers: ['next 7 days', 'next 30 days', 'previous 7 days', 'previous 30 days'],
+        placeholder: {
+          date: 'Select Date'
+        }
+      },
       casa: {
         isActive: true
       },
