@@ -29,8 +29,10 @@
             .datas
               label(for="data") Datas:
               .input
-                input(type="text" placeholder="Ida")
-                input(type="text" placeholder="Volta")
+                no-ssr
+                  date-picker(format="DD-MMM-YYYY" v-model='ida' :lang='lang' placeholder="Check-in")
+                no-ssr
+                  date-picker(format="DD-MMM-YYYY" v-model='volta' :lang='lang' placeholder="Check-out")
             .hospedes
               label(for="hospedes") Hóspedes:
                 .dropdown(@click="openDropdown")
@@ -62,8 +64,10 @@
             .datas
               label(for="data") Datas:
               .input
-                input(type="text" placeholder="Ida")
-                input(type="text" placeholder="Volta")
+                no-ssr
+                  date-picker(format="DD-MMM-YYYY" v-model='ida' :lang='lang' placeholder="Check-in")
+                no-ssr
+                  date-picker(format="DD-MMM-YYYY" v-model='volta' :lang='lang' placeholder="Check-out")
             .hospedes
               label(for="hospedes") Hóspedes:
                 .dropdown(@click="openDropdown")
@@ -95,8 +99,10 @@
             .datas
               label(for="data") Datas:
               .input
-                input(type="text" placeholder="Ida")
-                input(type="text" placeholder="Volta")
+                no-ssr
+                  date-picker(format="DD-MMM-YYYY" v-model='ida' :lang='lang' placeholder="Check-in")
+                no-ssr
+                  date-picker(format="DD-MMM-YYYY" v-model='volta' :lang='lang' placeholder="Check-out")
             .hospedes
               label(for="hospedes") Hóspedes:
                 .dropdown(@click="openDropdown")
@@ -128,8 +134,10 @@
             .datas
               label(for="data") Datas:
               .input
-                input(type="text" placeholder="Ida")
-                input(type="text" placeholder="Volta")
+                no-ssr
+                  date-picker(format="DD-MMM-YYYY" v-model='ida' :lang='lang' placeholder="Check-in")
+                no-ssr
+                  date-picker(format="DD-MMM-YYYY" v-model='volta' :lang='lang' placeholder="Check-out")
             .hospedes
               label(for="hospedes") Hóspedes:
                 .dropdown(@click="openDropdown")
@@ -161,8 +169,10 @@
             .datas
               label(for="data") Datas:
               .input
-                input(type="text" placeholder="Ida")
-                input(type="text" placeholder="Volta")
+                no-ssr
+                  date-picker(format="DD-MMM-YYYY" v-model='ida' :lang='lang' placeholder="Check-in")
+                no-ssr
+                  date-picker(format="DD-MMM-YYYY" v-model='volta' :lang='lang' placeholder="Check-out")
             .hospedes
               label(for="hospedes") Hóspedes:
                 .dropdown(@click="openDropdown")
@@ -183,8 +193,7 @@
             .buscar
               a.btn Buscar
                 font-awesome-icon(:icon="['fas', 'angle-right']")
-    no-ssr
-      date-picker(v-model='date' :lang='lang')
+
 </template>
 
 <script>
@@ -195,14 +204,11 @@ export default {
   },
   data () {
     return {
-      date: '',
+      ida: '',
+      volta: '',
       lang: {
-        days: ['DOM', 'SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SÁB'],
-        months: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
-        pickers: ['next 7 days', 'next 30 days', 'previous 7 days', 'previous 30 days'],
-        placeholder: {
-          date: 'Select Date'
-        }
+        days: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'],
+        months: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
       },
       casa: {
         isActive: true

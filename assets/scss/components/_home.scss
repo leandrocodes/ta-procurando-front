@@ -94,6 +94,10 @@
     border-radius: 7vh;
     border: 2px solid $primary;
     height: 5vh;
+    &::placeholder{color: $dark;}
+    .mx-calendar-icon{
+      color: $primary!important;
+    }
   }
   .form-search{
     display: flex;
@@ -112,8 +116,8 @@
     flex-direction: column;
     .input{
       input{
-        width: 150px;
-        margin: 0 5px
+        font-family: $font-family-sans-serif;
+        &::placeholder{color: $dark;}
       }
     }
   }
