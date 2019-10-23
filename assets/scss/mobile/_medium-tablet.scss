@@ -6,6 +6,12 @@
     background: white;
     padding: .05rem .5rem;
     flex-direction: column;
+    .row{
+      min-width: 85vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     .header-logo{
       width: 200px;
       height: 45px;

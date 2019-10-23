@@ -2,13 +2,14 @@
   .appHeader
     header.header
       b-nav(align='left' @click="open = !open").menu
-        b-nav-item
-          nuxt-link(to='/')
-            .header-logo
-        b-nav-item.burguer
-          .line.line1
-          .line.line2
-          .line.line3
+        .row
+          b-nav-item
+            nuxt-link(to='/')
+              .header-logo
+          b-nav-item.burguer
+            .line.line1
+            .line.line2
+            .line.line3
 
       b-nav(align='right').nav-links
         div.nav-item
