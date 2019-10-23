@@ -195,7 +195,6 @@
                 font-awesome-icon(:icon="['fas', 'angle-right']")
 
 </template>
-
 <script>
 import AppHeader from '../components/AppHeader'
 export default {
