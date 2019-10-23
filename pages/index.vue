@@ -148,13 +148,13 @@
                   .menu(v-if="openDropdownMenu")
                     .adultos
                       | {{ nAdultos }} Adultos
-                      a.btn(@click='nAdultos--') -
-                      a.btn(@click='nAdultos++') +
+                      b-button(@click='nAdultos--') -
+                      b-button(@click='nAdultos++') +
                     hr
                     .criancas
                       | {{ nCriancas }} Crianças
-                      a.btn(@click='nCriancas--') -
-                      a.btn(@click='nCriancas++') +
+                      b-button(@click='nCriancas--') -
+                      b-button(@click='nCriancas++') +
             .buscar
               a.btn Buscar
                 font-awesome-icon(:icon="['fas', 'angle-right']")
@@ -208,7 +208,20 @@ export default {
       volta: '',
       lang: {
         days: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'],
-        months: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+        months: [
+          'Jan',
+          'Fev',
+          'Mar',
+          'Abr',
+          'Mai',
+          'Jun',
+          'Jul',
+          'Ago',
+          'Set',
+          'Out',
+          'Nov',
+          'Dez'
+        ]
       },
       casa: {
         isActive: true
@@ -233,10 +246,18 @@ export default {
   },
   watch: {
     nAdultos () {
+      if (this.nAdultos < 0) {
+        this.nAdultos = 0
+        return this.nAdultos
+      }
       this.hospedes = true
       return this.hospedes
     },
     nCriancas () {
+      if (this.nCriancas < 0) {
+        this.nCriancas = 0
+        return this.nCriancas
+      }
       this.hospedes = true
       return this.hospedes
     }
@@ -293,8 +314,9 @@ export default {
 </script>
 
 <style>
-.showIn-enter-active, .showIn-leave-active {
-  transition: all .2s;
+.showIn-enter-active,
+.showIn-leave-active {
+  transition: all 0.2s;
   max-height: 100px;
 }
 .showIn-enter, .showIn-leave-to /* .fade-leave-active em versões anteriores a 2.1.8 */ {

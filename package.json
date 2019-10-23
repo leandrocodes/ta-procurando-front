@@ -1,7 +1,7 @@
 {
-  "name": "ta-procurando-front",
-  "version": "1.0.0",
-  "description": "My bedazzling Nuxt.js project",
+  "name": "taprocurando.com",
+  "version": "0.0.1",
+  "description": "taprocurando.com",
   "author": "leandrocodes",
   "private": true,
   "scripts": {
