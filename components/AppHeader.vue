@@ -92,15 +92,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .slide-enter-active,
 .slide-leave-active {
   transition: all 0.2s;
   max-height: 100px;
 }
+
 .slide-enter, .slide-leave-to /* .fade-leave-active em versões anteriores a 2.1.8 */ {
   opacity: 0;
   max-height: 0px;
 }
+
 .active{
   .line2{
     opacity: 0;
@@ -113,4 +116,5 @@ export default {
     transform: rotate(45deg);
   }
 }
+
 </style>
