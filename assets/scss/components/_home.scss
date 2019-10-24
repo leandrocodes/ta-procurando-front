@@ -275,3 +275,21 @@
     }
   }
 }
+
+
+.text-recommendations{
+  font-family: $font-family-sans-serif;
+  color: $primary;
+  font-size: 27px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span{
+    border: 1px solid $primary;
+    padding: 17px;
+    border-radius: 30px;
+    font-size: 19px;
+    margin-left: 25px;
+  }
+}

@@ -204,6 +204,10 @@
           | cadastrando sua turma.
         a.btn Cadastrar
 
+    section.text-recommendations
+      h2 Vai viajar?
+        span as melhores acomodações
+
 </template>
 <script>
 import AppHeader from '../components/AppHeader'
