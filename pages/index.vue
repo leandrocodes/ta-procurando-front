@@ -1,5 +1,5 @@
 <template lang="pug">
-  .index
+  .home
     AppHeader
     section.busca
       div.tabs
@@ -193,6 +193,16 @@
             .buscar
               a.btn Buscar
                 font-awesome-icon(:icon="['fas', 'angle-right']")
+    section.banner-sua-turma
+      .background
+        h2
+          | Ganhe até
+          strong
+            |  50%
+          |  desconto em cada acomodação
+          br
+          | cadastrando sua turma.
+        a.btn Cadastrar
 
 </template>
 <script>

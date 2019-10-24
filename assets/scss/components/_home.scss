@@ -11,11 +11,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
+  margin-top: 20px;
 }
 .tab{
-  margin: 20px 0 1.5px 1.5px;
+  margin: 0 .75px;
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -25,7 +26,7 @@
   border-top-right-radius: 5px;
   font-family: $font-family-sans-serif;
   transition: all .2s ease-in-out;
-  min-width: 25%;
+  width: 20%;
   letter-spacing: 1px;
   &:hover{
     cursor: pointer;
@@ -231,6 +232,46 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
+    }
+  }
+}
+
+.banner-sua-turma{
+  padding: 32px;
+  .background{
+    padding: 32px;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+    height: 250px;
+    background-image: url('~@/assets/imgs/b1.jpg');
+    background-size: cover;
+    h2{
+      color: $light;
+      font-weight: lighter;
+      font-family: $font-family-sans-serif;
+      strong{
+        font-family: $font-family-sans-serif-bold;
+      }
+    }
+    .btn{
+      background: transparent;
+      color: $light;
+      width: 20vw;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10vh;
+      border: 1px solid $light;
+      transition: all .3s ease;
+      &:hover{
+        cursor: pointer;
+        background: $primary;
+        color: $light;
+        border: transparent;
+      }
     }
   }
 }
