@@ -212,10 +212,6 @@
       HouseCard
       HouseCard
       HouseCard
-      HouseCard
-      HouseCard
-      HouseCard
-      HouseCard
 
 </template>
 <script>
