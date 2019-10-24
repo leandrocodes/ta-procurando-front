@@ -208,6 +208,8 @@
       h2 Vai viajar?
         span as melhores acomodações
 
+    section.slider-casas
+      | slider here
 </template>
 <script>
 import AppHeader from '../components/AppHeader'
