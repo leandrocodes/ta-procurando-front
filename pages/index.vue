@@ -209,13 +209,22 @@
         span as melhores acomodações
 
     section.slider-casas
-      | slider here
+      HouseCard
+      HouseCard
+      HouseCard
+      HouseCard
+      HouseCard
+      HouseCard
+      HouseCard
+
 </template>
 <script>
 import AppHeader from '../components/AppHeader'
+import HouseCard from '../components/HouseCard'
 export default {
   components: {
-    AppHeader
+    AppHeader,
+    HouseCard
   },
   data () {
     return {
